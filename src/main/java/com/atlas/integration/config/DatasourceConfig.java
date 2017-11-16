@@ -43,7 +43,7 @@ public class DatasourceConfig {
 		LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactory.setDataSource(ds);
 		entityManagerFactory
-				.setPackagesToScan(new String[] { "com.atlas.integration.domain" });
+				.setPackagesToScan(new String[] { "com.atlas.integration.model" });
 		JpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
 		entityManagerFactory.setJpaVendorAdapter(jpaVendorAdapter);
 		return entityManagerFactory;
