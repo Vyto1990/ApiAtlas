@@ -1,6 +1,6 @@
 package com.atlas.integration.service.impl;
 
-import com.atlas.integration.domain.User;
+import com.atlas.integration.model.User;
 import com.atlas.integration.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

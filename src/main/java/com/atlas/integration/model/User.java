@@ -1,4 +1,4 @@
-package com.atlas.integration.domain;
+package com.atlas.integration.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

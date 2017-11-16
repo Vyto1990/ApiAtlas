@@ -1,6 +1,6 @@
 package com.atlas.integration.repository;
 
-import com.atlas.integration.domain.Role;
+import com.atlas.integration.model.Role;
 
 import org.springframework.data.repository.CrudRepository;
 

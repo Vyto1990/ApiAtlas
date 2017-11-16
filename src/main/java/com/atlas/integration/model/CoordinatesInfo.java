@@ -1,4 +1,4 @@
-package com.atlas.integration.domain;
+package com.atlas.integration.model;
 
 public class CoordinatesInfo {
 	public String direction;

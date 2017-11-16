@@ -1,4 +1,4 @@
-package com.atlas.jackson.domain;
+package com.atlas.integration.model.apigoogle;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

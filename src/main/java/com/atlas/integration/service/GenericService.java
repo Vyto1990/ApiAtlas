@@ -4,10 +4,10 @@ package com.atlas.integration.service;
 
 import java.util.List;
 
-import com.atlas.integration.domain.Adress;
-import com.atlas.integration.domain.Coordinates;
-import com.atlas.integration.domain.Status;
-import com.atlas.integration.domain.User;
+import com.atlas.integration.model.Adress;
+import com.atlas.integration.model.Coordinates;
+import com.atlas.integration.model.Status;
+import com.atlas.integration.model.User;
 
 
 

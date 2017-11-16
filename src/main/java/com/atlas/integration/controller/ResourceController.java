@@ -1,9 +1,9 @@
 package com.atlas.integration.controller;
 
-import com.atlas.integration.domain.Adress;
-import com.atlas.integration.domain.Coordinates;
-import com.atlas.integration.domain.Status;
-import com.atlas.integration.domain.User;
+import com.atlas.integration.model.Adress;
+import com.atlas.integration.model.Coordinates;
+import com.atlas.integration.model.Status;
+import com.atlas.integration.model.User;
 import com.atlas.integration.service.GenericService;
 
 import org.springframework.beans.factory.annotation.Autowired;

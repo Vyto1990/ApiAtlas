@@ -1,14 +1,14 @@
 package com.atlas.integration.service.impl;
 
-import com.atlas.integration.domain.Adress;
-import com.atlas.integration.domain.Coordinates;
-import com.atlas.integration.domain.CoordinatesInfo;
-import com.atlas.integration.domain.Status;
-import com.atlas.integration.domain.User;
+import com.atlas.integration.model.Adress;
+import com.atlas.integration.model.Coordinates;
+import com.atlas.integration.model.CoordinatesInfo;
+import com.atlas.integration.model.Status;
+import com.atlas.integration.model.User;
+import com.atlas.integration.model.apigoogle.ListAdressGoogle;
 import com.atlas.integration.repository.AdressRepository;
 import com.atlas.integration.repository.UserRepository;
 import com.atlas.integration.service.GenericService;
-import com.atlas.jackson.domain.ListAdressGoogle;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
