@@ -3,7 +3,6 @@ package com.atlas.integration.controller;
 import com.atlas.integration.model.Adress;
 import com.atlas.integration.model.Coordinates;
 import com.atlas.integration.model.Status;
-import com.atlas.integration.model.User;
 import com.atlas.integration.service.GenericService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,7 @@ public class ResourceController {
     private GenericService userService;
 
     @GetMapping(value ="/listAdress")
-    @PreAuthorize("hasAuthority('ADMIN_USER') or hasAuthority('STANDARD_USER')")
+    @PreAuthorize("hasAuthority('ADMIN_USER')")
     public List<Adress> getUser(){
         return userService.findAllAdress();
     }
@@ -34,7 +33,7 @@ public class ResourceController {
 //    }
     
     @GetMapping(value ="/addAdress/{adress}")
-    @PreAuthorize("hasAuthority('ADMIN_USER') or hasAuthority('STANDARD_USER')")
+    @PreAuthorize("hasAuthority('STANDARD_USER')")
     public Status saveUser(@PathVariable("adress") final String adress){
         return userService.addUser(adress);
     }

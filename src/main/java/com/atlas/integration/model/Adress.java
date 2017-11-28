@@ -12,6 +12,15 @@ public class Adress {
 
     @Column(name = "direction")
     private String name;
+    
+    public Adress(Long s, String b){
+    	this.id = s;
+    	this.name = b;
+    }
+    
+    public Adress(){
+    	
+    }
 
     public Long getId() {
         return id;
