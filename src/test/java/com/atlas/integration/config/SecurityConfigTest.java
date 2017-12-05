@@ -71,7 +71,7 @@ public class SecurityConfigTest {
 						"Bearer " + accessToken)).andExpect(status().isOk());
 	} 
 
-	private String obtainAccessToken(String username, String password)
+	public String obtainAccessToken(String username, String password)
 			throws Exception {
 
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<>();

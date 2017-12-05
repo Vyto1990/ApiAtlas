@@ -46,14 +46,14 @@ public class GenericServiceImpl implements GenericService {
 	public List<Adress> findAllAdress() {
 		return (List<Adress>) AdressRepository.findAll();
 	}
-
+	
 	@Override
-	public Status addUser(String adress) {
+	public Status addAdress(String adress) {
 		Adress adr = new Adress();
 		adr.setName(adress);
 		AdressRepository.save(adr);
 		return Status.SAVED;
-	}
+	}		
 
 	@Override
 	public Coordinates getCoordinates(String direction) {
@@ -118,5 +118,7 @@ public class GenericServiceImpl implements GenericService {
 		
 		return arrayCoord;
 	}
+
+	
 
 }

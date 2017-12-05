@@ -18,12 +18,12 @@ import java.util.List;
 @RequestMapping("/api")
 public class ResourceController {
     @Autowired
-    private GenericService userService;
+    private GenericService genericService;
 
     @GetMapping(value ="/listAdress")
     @PreAuthorize("hasAuthority('ADMIN_USER')")
     public List<Adress> getUser(){
-        return userService.findAllAdress();
+        return genericService.findAllAdress();
     }
 
 //    @GetMapping(value ="/users")
@@ -34,20 +34,20 @@ public class ResourceController {
     
     @GetMapping(value ="/addAdress/{adress}")
     @PreAuthorize("hasAuthority('STANDARD_USER')")
-    public Status saveUser(@PathVariable("adress") final String adress){
-        return userService.addUser(adress);
+    public Status saveAdress(@PathVariable("adress") final String adress){
+        return genericService.addAdress(adress);
     }
     
     @GetMapping(value ="/getCoord/{adress}")
     @PreAuthorize("hasAuthority('ADMIN_USER') or hasAuthority('STANDARD_USER')")
     public Coordinates getCoords(@PathVariable("adress") final String adress){
-        return userService.getCoordinates(adress);
+        return genericService.getCoordinates(adress);
     }
     
     @GetMapping(value ="/getAllCoord")
     @PreAuthorize("hasAuthority('ADMIN_USER') or hasAuthority('STANDARD_USER')")
     public List<Coordinates> getCoords(){
-        return userService.getCoordinates();
+        return genericService.getCoordinates();
     }
     
     

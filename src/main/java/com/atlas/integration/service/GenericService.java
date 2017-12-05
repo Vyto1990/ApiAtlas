@@ -19,7 +19,7 @@ public interface GenericService {
 
     List<Adress> findAllAdress();
     
-    Status addUser(String adress);
+    Status addAdress(String adress);
     
     Coordinates getCoordinates(String adress);
 

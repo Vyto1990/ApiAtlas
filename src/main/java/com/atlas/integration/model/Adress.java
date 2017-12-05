@@ -13,9 +13,10 @@ public class Adress {
     @Column(name = "direction")
     private String name;
     
-    public Adress(Long s, String b){
-    	this.id = s;
-    	this.name = b;
+    
+    
+    public Adress(String name){
+    	this.name = name;
     }
     
     public Adress(){
